@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image: ["louisunlimited/searxng", "dalf/filtron", "dalf/morty"]
+        image: ["searxng/searxng", "dalf/filtron", "dalf/morty"]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
