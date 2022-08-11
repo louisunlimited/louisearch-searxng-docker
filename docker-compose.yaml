@@ -36,7 +36,7 @@ services:
 
   searxng:
     container_name: searxng
-    image: louisunlimited/searxng:stage
+    image: searxng/searxng:latest
     networks:
       - searxng
     ports:
