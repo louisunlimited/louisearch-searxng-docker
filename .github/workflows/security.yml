@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image: ["searxng/searxng", "dalf/filtron", "dalf/morty"]
+        image: ["louisunlimited/searxng", "dalf/filtron", "dalf/morty"]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -19,9 +19,9 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: '${{ matrix.image }}:latest'
-          format: 'table'
-          exit-code: '1'
+          image-ref: "${{ matrix.image }}:latest"
+          format: "table"
+          exit-code: "1"
           ignore-unfixed: false
-          vuln-type: 'os,library'
-          severity: 'UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL'
+          vuln-type: "os,library"
+          severity: "UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL"
