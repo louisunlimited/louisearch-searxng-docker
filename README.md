@@ -1,6 +1,8 @@
+# Find my own deployment here! 👉 [louisearch.com](https://louisearch.com)👈
+
 # searxng-docker
 
-Create a new SearXNG  instance in five minutes using Docker
+Create a new SearXNG  instance using Docker
 
 ## What is included ?
 
